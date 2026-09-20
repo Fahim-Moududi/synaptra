@@ -1,0 +1,245 @@
+{
+  "eventDate": "2026-10-16T09:00:00+05:30",
+  "eventDateLabel": "16 October 2026",
+  "eventDateShort": "16.10.2026",
+  "registerCloseLabel": "10 October 2026",
+  "registerCloseShort": "10.10.2026",
+  "registerCloseStat": "10 Oct",
+  "startTime": "9:00 AM",
+  "startTimeChip": "09:00 AM IST",
+  "venue": "EEE Seminar Hall",
+  "fee": "₹200 / head",
+  "feeChip": "₹200 / participant",
+  "hero": {
+    "college": "Syed Ammal Engineering College",
+    "meta": "An Autonomous Institution · Ramanathapuram, Tamil Nadu",
+    "dept": "Department of Computer Science and Business Systems",
+    "deptShort": "(CSBS)",
+    "kicker": "National-format Technical & Non-Technical Symposium",
+    "tagline": "Where Ideas Connect, Innovation Takes Over",
+    "dek": "A one-day campus symposium for research, products, design, and live-floor competition — hosted by CSBS on 16 October 2026.",
+    "motto": ["Think", "Create", "Compete", "Grow"],
+    "countdownLabel": "Symposium starts in",
+    "finePrint": "Registration closes 10 October 2026. College ID required on campus."
+  },
+  "stats": [
+    ["05", "Flagship events"],
+    ["01", "Campus day"],
+    ["₹200", "Per participant"],
+    ["10 Oct", "Last date to register"],
+    ["SAEC", "Autonomous campus"]
+  ],
+  "about": {
+    "eyebrow": "[ 01 ] The symposium",
+    "title": "A live network for ideas, products, and performance.",
+    "paragraphs": [
+      "SYNAPTRA '26 is the flagship symposium of the Department of Computer Science and Business Systems at Syed Ammal Engineering College. The name joins synapse and the year’s charge: a day when student work is presented, tested, and connected in public.",
+      "The programme is deliberately mixed. Technical floors cover paper presentation, project expo, and UI/UX design. Non-technical floors cover quiz and auction. Participants leave with critique, visibility, and a record of having competed on a formal campus stage."
+    ],
+    "quoteHud": "Department note",
+    "quote": "CSBS sits between computing and business systems. SYNAPTRA is built for that overlap — rigorous enough for research, open enough for product, design, and strategy.",
+    "quoteMeta": "Department of CSBS · SAEC (Autonomous)",
+    "pillars": [
+      ["01", "Think", "Frame a problem with evidence — a paper, a product thesis, or a design brief."],
+      ["02", "Create", "Show the work: slides, a prototype, a flow, or a live demonstration."],
+      ["03", "Compete", "Meet a jury and a room. Technical and non-technical tracks run the same day."],
+      ["04", "Grow", "Take feedback, meet peers from other campuses, and convert the day into a next step."]
+    ]
+  },
+  "eventsIntro": {
+    "eyebrow": "[ 02 ] Competitions",
+    "title": "Five events. One campus day.",
+    "lead": "Choose a primary event at registration. Open a brief for format, evaluation focus, and what to bring. Final slot lists are issued to registered participants."
+  },
+  "events": [
+    {
+      "id": "paper",
+      "kind": "tech",
+      "code": "SYN-01 · Technical",
+      "title": "Paper Presentation",
+      "blurb": "Present original research or a structured review on computing, data, or business systems.",
+      "tags": ["Jury review", "Q&A", "Abstract first"]
+    },
+    {
+      "id": "expo",
+      "kind": "tech",
+      "code": "SYN-02 · Technical",
+      "title": "Project Expo",
+      "blurb": "Exhibit a working prototype or applied campus project and walk the jury through the build.",
+      "tags": ["Live demo", "Poster", "Impact"]
+    },
+    {
+      "id": "uiux",
+      "kind": "tech",
+      "code": "SYN-03 · Technical",
+      "title": "UI/UX Design",
+      "blurb": "A timed problem-statement sprint: map the user, design the flow, and ship a clear, original interface.",
+      "tags": ["Timed brief", "User flow", "Prototype"]
+    },
+    {
+      "id": "quiz",
+      "kind": "nontech",
+      "code": "SYN-04 · Non-technical",
+      "title": "Quiz",
+      "blurb": "Multiple timed rounds. Register before the start, report early, and leave gadgets at the desk.",
+      "tags": ["Timed rounds", "No gadgets", "Quiz Master"]
+    },
+    {
+      "id": "auction",
+      "kind": "nontech",
+      "code": "SYN-05 · Non-technical",
+      "title": "Business Idea Auction",
+      "blurb": "Pitch a business on slides, take investment offers, and negotiate — keep more than 50% ownership.",
+      "tags": ["PPT pitch", "Negotiation", "Majority stake"]
+    }
+  ],
+  "briefs": {
+    "paper": {
+      "lead": "A formal research or review presentation before a faculty jury. Preference is given to original analysis in computing, data, AI, business systems, or applied technology.",
+      "format": ["Short abstract before or at reporting, as instructed by mail.", "Timed presentation followed by questions.", "Slides in 16:9. Cite sources. No plagiarised slides."],
+      "eval": ["Clarity of problem, method, and contribution.", "Quality of evidence and answers in Q&A.", "Communication and time discipline."],
+      "bring": "Laptop or a PDF on a drive, college ID, and a printed abstract if requested."
+    },
+    "expo": {
+      "lead": "A judged exhibition of a working prototype, product, or applied campus project. Static posters without a demo are weaker than a live walkthrough.",
+      "format": ["Station-based demo during the expo window.", "A one-page poster or one-pager is recommended.", "All team members should be able to explain the stack and the user."],
+      "eval": ["Novelty and completeness of the build.", "Usefulness and honesty about limits.", "Live demonstration quality."],
+      "bring": "Hardware or a stable laptop demo, chargers, and any offline fallback if campus network is constrained."
+    },
+    "uiux": {
+      "lead": "A timed design heat. You work from the assigned problem statement — identify the user, map the flow, then deliver a simple, readable interface. Craft matters; copying an existing product does not.",
+      "format": [
+        "Read the problem fully before you draw. Design only for that brief; do not change the core requirement.",
+        "Name the target user and design for their needs. Lock a clear user flow before you finish the UI.",
+        "Keep screens simple, readable, and consistent. Show empty, error, success, and loading states where they matter.",
+        "Original work only. Figma or another permitted tool. Finish inside the given time."
+      ],
+      "eval": [
+        "The time limit is closed. Work only on the assigned problem. No templates or copied products.",
+        "Internet, references, and AI only if announced before the heat. Disclose AI use if it is allowed.",
+        "Late submission may be penalised or dropped. The jury's decision is final."
+      ],
+      "submit": [
+        "Problem statement / design title",
+        "Target user",
+        "Brief user flow",
+        "Low-fidelity wireframe or flow (recommended)",
+        "Final UI screens",
+        "Clickable prototype where possible",
+        "Final file or share link with the organisers before the deadline"
+      ],
+      "bring": "Laptop with Figma or your permitted tool, exported screens as backup, and college ID."
+    },
+    "quiz": {
+      "lead": "Open to all eligible, registered participants. The quiz runs in multiple rounds. Each question has a clock. Answer inside it. The Quiz Master's call is final.",
+      "format": [
+        "Every team or participant must register before the quiz begins.",
+        "Report at the venue 15 minutes before the scheduled time.",
+        "No phones, smart watches, gadgets, internet, or discussion unless the Quiz Master permits it."
+      ],
+      "eval": [
+        "Malpractice means immediate disqualification. Maintain discipline throughout.",
+        "Rules and scoring may change by round and will be announced before that round starts.",
+        "Winners are decided on the final score. Prizes follow that ranking. The Quiz Master's decision is final."
+      ],
+      "bring": "College ID and your team. Leave phones and wearables off the floor."
+    },
+    "auction": {
+      "lead": "Pitch a business or product to the floor, take investment offers, and negotiate the equity. A physical prototype is optional. The team that lands the strongest capital while keeping the most ownership wins.",
+      "format": [
+        "Present the idea or product on a PPT. A physical prototype is optional.",
+        "After the pitch, investors may offer money for a share of the business.",
+        "Accept, reject, or counter. The team must keep more than 50% ownership."
+      ],
+      "eval": [
+        "The winner is the strongest investment amount with the highest ownership still held.",
+        "Pitch and negotiation must finish inside the given time.",
+        "No fake claims, plagiarism, or cheating. The judges' decision is final."
+      ],
+      "bring": "Laptop or a PPT on a drive, college ID, and a prototype only if you have one."
+    }
+  },
+  "scheduleIntro": {
+    "eyebrow": "[ 03 ] Campus day",
+    "title": "Indicative schedule",
+    "lead": "Doors follow this working order. Exact room and heat timings will be mailed after registration closes on 10 October 2026."
+  },
+  "schedule": [
+    { "time": "08:30", "title": "Reporting & kit", "text": "ID verification, registration desk, and event-wise assembly near the EEE Seminar Hall." },
+    { "time": "09:00", "title": "Inauguration", "text": "Formal opening of SYNAPTRA '26 by the Department of CSBS." },
+    { "time": "09:45", "title": "Technical floors", "text": "Paper presentation, project expo, and UI/UX design in parallel or sequenced heats." },
+    { "time": "12:30", "title": "Break", "text": "Campus break. Food arrangements, if any, will be confirmed to registered participants." },
+    { "time": "13:30", "title": "Non-technical floors", "text": "Quiz and business idea auction, plus any remaining technical slots." },
+    { "time": "16:00", "title": "Valedictory", "text": "Closing remarks and recognition of winners, as announced by the organising committee." }
+  ],
+  "venue": {
+    "eyebrow": "[ 06 ] Campus",
+    "title": "Venue & arrival",
+    "lead": "SYNAPTRA '26 is hosted at the EEE Seminar Hall, Syed Ammal Engineering College (Autonomous), Ramanathapuram. Report at least 15 minutes before your first slot with a valid college identity card and your SYN registration ID.",
+    "points": [
+      "Campus: Dr. E.M. Abdullah Campus, Ramanathapuram, Tamil Nadu",
+      "Hall: EEE Seminar Hall",
+      "Host: Department of Computer Science and Business Systems",
+      "Dress: Formal or smart campus attire recommended for jury events"
+    ],
+    "cardHud": "Wayfinding",
+    "cardTitle": "How to reach",
+    "card": [
+      "Ramanathapuram is connected by road and rail across southern Tamil Nadu. Use the college main gate and follow on-campus boards to the EEE block / seminar hall.",
+      "Inter-college participants should plan arrival before 08:30 so verification does not cut into the inaugural session."
+    ]
+  },
+  "rules": [
+    {
+      "title": "Registration",
+      "open": true,
+      "items": [
+        "Online registration is mandatory before 23:59 IST on 10 October 2026.",
+        "The published fee is ₹200 per participant (per head), not per team.",
+        "Carry your college ID and the SYN ID issued after this form (or the official confirmation once the department form is linked).",
+        "Payment mode on campus, if required, will be confirmed by the organising committee."
+      ]
+    },
+    {
+      "title": "Eligibility & teams",
+      "items": [
+        "Open to students of recognised institutions. SAEC students and visiting campuses are welcome.",
+        "Register a primary event. Additional entries are subject to slot availability and coordinator approval.",
+        "Team composition, where allowed, will be confirmed in the event brief and on-desk instructions.",
+        "All members listed must be present for judged rounds unless the coordinator records an exception."
+      ]
+    },
+    {
+      "title": "Time, discipline & campus",
+      "items": [
+        "Report 15–30 minutes before your scheduled heat.",
+        "Late arrival may forfeit the slot. The jury will not restart a completed heat.",
+        "Follow allotted presentation, demo, and round durations.",
+        "College property, labs, and hall equipment are to be used only as directed."
+      ]
+    },
+    {
+      "title": "Originality, judging & conduct",
+      "items": [
+        "Papers, projects, designs, and media must be the participants’ own work. Plagiarism or ghost entries mean disqualification.",
+        "Evaluation uses predefined technical and presentation criteria. Jury and coordinator decisions are final.",
+        "Professional conduct is required throughout. Harassment, disruption, or unsafe behaviour ends participation."
+      ]
+    }
+  ],
+  "faqs": [
+    { "q": "Who can register?", "a": "Undergraduate students from recognised colleges. CSBS hosts the day; other departments and campuses may enter any listed event." },
+    { "q": "Is the fee per team or per person?", "a": "₹200 per head, as printed on the official SYNAPTRA '26 poster." },
+    { "q": "Can I enter more than one event?", "a": "Select one primary event here. Same-day clashes are resolved by coordinators. A second event is possible only if the timetable allows." },
+    { "q": "Do I need to submit an abstract or prototype in advance?", "a": "Paper presentation typically needs a short abstract. Project expo prefers a working demo on the day. UI/UX is a timed on-site problem statement with a required prototype pack. Exact file formats will be mailed to registered participants." },
+    { "q": "Will food or travel be provided?", "a": "Treat the campus as a one-day visit unless the department announces otherwise. Do not assume travel reimbursement or complimentary meals until you receive written confirmation." },
+    { "q": "Is this form the final official register?", "a": "This site stores a local SYN ID on your device so the experience is complete. The department can replace the endpoint with Google Forms, a sheet, or a payment link without changing the public page." }
+  ],
+  "registerLead": "Last date 10 October 2026. Fee ₹200 per participant. You will receive a SYN ID on this device after submit.",
+  "footer": {
+    "motto": "Ideas / Tech / Talent / Tomorrow",
+    "org": "Department of Computer Science and Business Systems",
+    "college": "Syed Ammal Engineering College (Autonomous)",
+    "place": "Ramanathapuram, Tamil Nadu"
+  }
+}
