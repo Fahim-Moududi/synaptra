@@ -17,7 +17,6 @@ const BOOT_LINES = [
 export default function App() {
   const [boot, setBoot] = useState({ done: false, pct: 0, line: BOOT_LINES[0] });
   const [ready, setReady] = useState(false);
-  const [filter, setFilter] = useState("all");
   const [briefId, setBriefId] = useState(null);
 
   const { mouse, dust } = useSiteEffects(ready);
@@ -104,7 +103,7 @@ export default function App() {
           ))}
         </section>
         <About />
-        <Events filter={filter} onFilter={setFilter} onOpen={openBrief} />
+        <Events onOpen={openBrief} />
         <Schedule items={schedule} />
         <Core />
         <Details />

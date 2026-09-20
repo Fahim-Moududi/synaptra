@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { events, briefs, registerLinkProps } from "../data";
 
-export function Events({ filter, onFilter, onOpen }) {
+const FILTERS = [
+  ["all", "All events"],
+  ["tech", "Technical"],
+  ["nontech", "Non-technical"],
+];
+
+export function Events({ onOpen }) {
+  const [filter, setFilter] = useState("all");
+  const visible = events.filter((event) => filter === "all" || event.kind === filter);
+
   return (
     <section id="events" className="section">
       <div className="section-head reveal">
@@ -11,33 +21,34 @@ export function Events({ filter, onFilter, onOpen }) {
         Choose a primary event at registration. Open a brief for format, evaluation focus,
         and what to bring. Final slot lists are issued to registered participants.
       </p>
-      <div className="filter-bar reveal" role="tablist" aria-label="Event filter">
-        {[
-          ["all", "All events"],
-          ["tech", "Technical"],
-          ["nontech", "Non-technical"],
-        ].map(([id, label]) => (
+      <div className="filter-bar" role="group" aria-label="Event filter">
+        {FILTERS.map(([id, label]) => (
           <button
             key={id}
             type="button"
             className={`chip${filter === id ? " on" : ""}`}
-            onClick={() => onFilter(id)}
+            aria-pressed={filter === id}
+            onClick={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              setFilter(id);
+            }}
           >
             {label}
           </button>
         ))}
       </div>
       <div className="event-board">
-        {events.map((event) => (
+        {visible.map((event) => (
           <article
             key={event.id}
-            className={`event-tile tilt reveal ${event.kind}${filter !== "all" && event.kind !== filter ? " is-hidden" : ""}`}
+            className={`event-tile tilt ${event.kind}`}
             role="button"
-            tabIndex={filter !== "all" && event.kind !== filter ? -1 : 0}
+            tabIndex={0}
             onClick={() => onOpen(event.id)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
                 onOpen(event.id);
               }
             }}
@@ -62,7 +73,7 @@ export function Brief({ eventId, onClose }) {
   const data = eventId ? briefs[eventId] : null;
   if (!data) return null;
   return (
-    <aside className="brief" onClick={(e) => e.target === e.currentTarget && onClose()}>
+    <aside className="brief" onClick={(event) => event.target === event.currentTarget && onClose()}>
       <div className="brief-card">
         <p className="hud">{data.code}</p>
         <h3>{data.title}</h3>
