@@ -101,14 +101,24 @@ export function useSiteEffects(ready) {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          const delay = Number(entry.target.dataset.delay || 0);
-          setTimeout(() => entry.target.classList.add("in"), delay);
-          io.unobserve(entry.target);
+          const node = entry.target;
+          const delay = Number(node.dataset.delay || 0);
+          setTimeout(() => {
+            node.classList.add("in");
+            node.setAttribute("data-revealed", "");
+          }, delay);
+          io.unobserve(node);
         });
       },
       { threshold: 0.16 }
     );
-    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    const watchReveals = () => {
+      document.querySelectorAll(".reveal:not([data-revealed])").forEach((el) => io.observe(el));
+    };
+    watchReveals();
+    const mo = new MutationObserver(watchReveals);
+    mo.observe(document.body, { childList: true, subtree: true });
 
     window.addEventListener("pointermove", onMove);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -117,6 +127,7 @@ export function useSiteEffects(ready) {
     return () => {
       cancelAnimationFrame(followId);
       io.disconnect();
+      mo.disconnect();
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("scroll", onScroll);
     };
