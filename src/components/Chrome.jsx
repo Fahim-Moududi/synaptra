@@ -171,6 +171,7 @@ export function Footer() {
           <a href="#about">About</a>
           <a href="#events">Events</a>
           <a href="#schedule">Schedule</a>
+          <a href="#contact">Contact</a>
           <a {...registerLinkProps}>Register</a>
         </nav>
       </div>

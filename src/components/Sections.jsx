@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { faqs, rules } from "../data";
+import { faqs, facultyCoordinators, rules, studentCoordinators } from "../data";
 
 export function About() {
   return (
@@ -200,5 +200,40 @@ export function RulesFaq() {
         </div>
       </section>
     </>
+  );
+}
+
+export function Contact() {
+  return (
+    <section id="contact" className="section">
+      <div className="section-head reveal">
+        <p className="eyebrow">[ 09 ] Contact</p>
+        <h2>Faculty &amp; student coordinators</h2>
+      </div>
+      <p className="lead reveal">
+        Reach the CSBS desk for SYNAPTRA &apos;26 queries. Call during working hours.
+      </p>
+      <h3 className="contact-label reveal">Faculty coordinators</h3>
+      <div className="contact-grid">
+        {facultyCoordinators.map((person) => (
+          <article className="contact-card tilt reveal" key={person.phone}>
+            <p className="hud">Faculty · CSBS</p>
+            <h3>{person.name}</h3>
+            <p>{person.role}</p>
+            <a href={`tel:+91${person.phone}`}>{person.display}</a>
+          </article>
+        ))}
+      </div>
+      <h3 className="contact-label reveal">Student coordinators</h3>
+      <div className="contact-grid students">
+        {studentCoordinators.map((person) => (
+          <article className="contact-card tilt reveal" key={person.phone}>
+            <p className="hud">Student · CSBS</p>
+            <h3>{person.name}</h3>
+            <a href={`tel:+91${person.phone}`}>{person.display}</a>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }

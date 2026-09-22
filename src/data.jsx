@@ -14,7 +14,20 @@ export const navLinks = [
   { href: "#events", label: "Events" },
   { href: "#schedule", label: "Schedule" },
   { href: "#venue", label: "Venue" },
+  { href: "#contact", label: "Contact" },
   { href: "#rules", label: "Guidelines" },
+];
+
+export const facultyCoordinators = [
+  { name: "R. Gautham Praveen", role: "Assistant Professor, CSBS", phone: "9629660577", display: "96296 60577" },
+  { name: "V. Deepigha", role: "Assistant Professor, CSBS", phone: "6383022104", display: "63830 22104" },
+];
+
+export const studentCoordinators = [
+  { name: "Ajay Kumar.M", phone: "9488532069", display: "94885 32069" },
+  { name: "Tamilarasi.S", phone: "8438118154", display: "84381 18154" },
+  { name: "Nithyashree.D", phone: "9345840510", display: "93458 40510" },
+  { name: "Logesh.S", phone: "9025948164", display: "90259 48164" },
 ];
 
 export const events = [
@@ -23,8 +36,8 @@ export const events = [
     kind: "tech",
     code: "SYN-01 · Technical",
     title: "Paper Presentation",
-    blurb: "Present original research or a structured review on computing, data, or business systems.",
-    tags: ["Jury review", "Q&A", "Abstract first"],
+    blurb: "Pitch a unique idea on 7–10 slides, aligned to the SDGs, in a 5–7 minute jury slot.",
+    tags: ["7–10 slides", "SDGs", "5–7 min"],
   },
   {
     id: "expo",
@@ -66,21 +79,26 @@ export const briefs = {
     title: "Paper Presentation",
     body: (
       <>
-        <p>A formal research or review presentation before a faculty jury. Preference is given to original analysis in computing, data, AI, business systems, or applied technology.</p>
-        <h4>Format</h4>
+        <p>
+          Present a unique idea before a faculty jury. The deck is the argument: short,
+          visual, and easy to follow. Align the work to the 17 Sustainable Development Goals.
+        </p>
+        <h4>Important instructions — idea PPT</h4>
         <ul>
-          <li>Short abstract before or at reporting, as instructed by mail.</li>
-          <li>Timed presentation followed by questions.</li>
-          <li>Slides in 16:9. Cite sources. No plagiarised slides.</li>
+          <li>Keep the deck to 7–10 slides, including the title slide.</li>
+          <li>Avoid paragraphs. Use points, diagrams, infographics, or pictures.</li>
+          <li>The idea should satisfy one or more of the 17 Sustainable Development Goals (SDGs).</li>
+          <li>Keep the explanation precise and easy to understand.</li>
+          <li>The idea must be unique and novel.</li>
+          <li>Each team has 5–7 minutes to present.</li>
         </ul>
-        <h4>Evaluation focus</h4>
+        <h4>On the floor</h4>
         <ul>
-          <li>Clarity of problem, method, and contribution.</li>
-          <li>Quality of evidence and answers in Q&amp;A.</li>
-          <li>Communication and time discipline.</li>
+          <li>Timed presentation followed by jury questions.</li>
+          <li>Slides in 16:9. Cite sources. No plagiarised slides or copied decks.</li>
         </ul>
         <h4>Bring</h4>
-        <p>Laptop or a PDF on a drive, college ID, and a printed abstract if requested.</p>
+        <p>Laptop or a PPT/PDF on a drive, college ID, and a printed abstract if requested.</p>
       </>
     ),
   },
@@ -227,12 +245,12 @@ export const briefs = {
 };
 
 export const schedule = [
-  { time: "08:30", title: "Reporting & kit", text: "ID verification, registration desk, and event-wise assembly near the EEE Seminar Hall." },
-  { time: "09:00", title: "Inauguration", text: "Formal opening of SYNAPTRA '26 by the Department of CSBS." },
-  { time: "09:45", title: "Technical floors", text: "Paper presentation, project expo, and UI/UX design in parallel or sequenced heats." },
-  { time: "12:30", title: "Break", text: "Campus break. Food arrangements, if any, will be confirmed to registered participants." },
-  { time: "13:30", title: "Non-technical floors", text: "Quiz and business idea auction, plus any remaining technical slots." },
-  { time: "16:00", title: "Valedictory", text: "Closing remarks and recognition of winners, as announced by the organising committee." },
+  { time: "09:00", title: "Reporting & kit", text: "ID verification, registration desk, and event-wise assembly near the EEE Seminar Hall." },
+  { time: "10:00", title: "Inauguration", text: "Formal opening of SYNAPTRA '26 by the Department of CSBS." },
+  { time: "11:00", title: "Technical floors", text: "Paper presentation, project expo, and UI/UX design in parallel or sequenced heats." },
+  { time: "13:00", title: "Break", text: "Campus break. Food arrangements, if any, will be confirmed to registered participants." },
+  { time: "14:00", title: "Non-technical floors", text: "Quiz and business idea auction, plus any remaining technical slots." },
+  { time: "15:00", title: "Valedictory", text: "Closing remarks and recognition of winners, as announced by the organising committee." },
 ];
 
 export const rules = [

@@ -57,8 +57,8 @@
       "kind": "tech",
       "code": "SYN-01 · Technical",
       "title": "Paper Presentation",
-      "blurb": "Present original research or a structured review on computing, data, or business systems.",
-      "tags": ["Jury review", "Q&A", "Abstract first"]
+      "blurb": "Pitch a unique idea on 7–10 slides, aligned to the SDGs, in a 5–7 minute jury slot.",
+      "tags": ["7–10 slides", "SDGs", "5–7 min"]
     },
     {
       "id": "expo",
@@ -95,10 +95,16 @@
   ],
   "briefs": {
     "paper": {
-      "lead": "A formal research or review presentation before a faculty jury. Preference is given to original analysis in computing, data, AI, business systems, or applied technology.",
-      "format": ["Short abstract before or at reporting, as instructed by mail.", "Timed presentation followed by questions.", "Slides in 16:9. Cite sources. No plagiarised slides."],
-      "eval": ["Clarity of problem, method, and contribution.", "Quality of evidence and answers in Q&A.", "Communication and time discipline."],
-      "bring": "Laptop or a PDF on a drive, college ID, and a printed abstract if requested."
+      "lead": "Present a unique idea before a faculty jury. The deck is the argument: short, visual, and easy to follow. Align the work to the 17 Sustainable Development Goals.",
+      "format": [
+        "Keep the deck to 7–10 slides, including the title slide.",
+        "Avoid paragraphs. Use points, diagrams, infographics, or pictures.",
+        "The idea should satisfy one or more of the 17 Sustainable Development Goals (SDGs).",
+        "Keep the explanation precise and easy to understand. The idea must be unique and novel.",
+        "Each team has 5–7 minutes to present. Timed presentation followed by jury questions."
+      ],
+      "eval": ["Clarity of the idea and SDG fit.", "Visual, point-led slides rather than paragraphs.", "Communication and time discipline in the 5–7 minute slot."],
+      "bring": "Laptop or a PPT/PDF on a drive, college ID, and a printed abstract if requested."
     },
     "expo": {
       "lead": "A judged exhibition of a working prototype, product, or applied campus project. Static posters without a demo are weaker than a live walkthrough.",
@@ -236,6 +242,16 @@
     { "q": "Is this form the final official register?", "a": "This site stores a local SYN ID on your device so the experience is complete. The department can replace the endpoint with Google Forms, a sheet, or a payment link without changing the public page." }
   ],
   "registerLead": "Last date 10 October 2026. Fee ₹200 per participant. You will receive a SYN ID on this device after submit.",
+  "facultyCoordinators": [
+    { "name": "R. Gautham Praveen", "role": "Assistant Professor, CSBS", "phone": "9629660577", "display": "96296 60577" },
+    { "name": "V. Deepigha", "role": "Assistant Professor, CSBS", "phone": "6383022104", "display": "63830 22104" }
+  ],
+  "studentCoordinators": [
+    { "name": "Ajay Kumar.M", "phone": "9488532069", "display": "94885 32069" },
+    { "name": "Tamilarasi.S", "phone": "8438118154", "display": "84381 18154" },
+    { "name": "Nithyashree.D", "phone": "9345840510", "display": "93458 40510" },
+    { "name": "Logesh.S", "phone": "9025948164", "display": "90259 48164" }
+  ],
   "footer": {
     "motto": "Ideas / Tech / Talent / Tomorrow",
     "org": "Department of Computer Science and Business Systems",

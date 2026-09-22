@@ -3,7 +3,7 @@ import { schedule } from "./data";
 import { Background, Boot, Footer, Header } from "./components/Chrome";
 import { Brief, Events } from "./components/Events";
 import { Hero } from "./components/Hero";
-import { About, Core, Details, RulesFaq, Schedule, Venue } from "./components/Sections";
+import { About, Contact, Core, Details, RulesFaq, Schedule, Venue } from "./components/Sections";
 import { prefersReducedMotion, useSiteEffects } from "./hooks/useSiteEffects";
 import { useNeuralCanvas } from "./hooks/useNeuralCanvas";
 
@@ -109,6 +109,7 @@ export default function App() {
         <Details />
         <Venue />
         <RulesFaq />
+        <Contact />
       </main>
       <Brief eventId={briefId} onClose={closeBrief} />
       <Footer />
