@@ -1,7 +1,7 @@
 export const EVENT_DATE = new Date("2026-10-16T09:00:00+05:30");
 
 /** Official registration portal. Every Register button goes here. */
-export const REGISTER_URL = "https://synaptra.vscale.in/";
+export const REGISTER_URL = "https://forms.gle/KoCb2iaz9hyn8Rxq9";
 
 export const INSTAGRAM_URL = "https://www.instagram.com/csbs_dept/";
 export const WHATSAPP_URL = "https://chat.whatsapp.com/IW2BVStbXm3C8elAwJhkzs";
