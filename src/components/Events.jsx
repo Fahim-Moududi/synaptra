@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { events, briefs, registerLinkProps } from "../data";
+import { events, briefs, REGISTER_URL } from "../data";
 
 const FILTERS = [
   ["all", "All events"],
@@ -79,7 +79,7 @@ export function Brief({ eventId, onClose }) {
         <h3>{data.title}</h3>
         <div>{data.body}</div>
         <div className="brief-actions">
-          <a className="btn magnetic" {...registerLinkProps} onClick={onClose}>
+          <a className="btn magnetic" href={REGISTER_URL} onClick={onClose}>
             Register for this event
           </a>
           <button type="button" className="btn ghost" onClick={onClose}>

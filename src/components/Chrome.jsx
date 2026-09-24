@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { navLinks, registerLinkProps } from "../data";
+import { INSTAGRAM_URL, navLinks, REGISTER_URL, WHATSAPP_URL } from "../data";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -44,7 +44,15 @@ export function Header() {
             {link.label}
           </a>
         ))}
-        <a className="nav-cta magnetic" {...registerLinkProps} onClick={() => setOpen(false)}>
+        <a
+          className="nav-cta"
+          href={REGISTER_URL}
+          onClick={(event) => {
+            event.preventDefault();
+            setOpen(false);
+            window.location.assign(REGISTER_URL);
+          }}
+        >
           Register
         </a>
       </nav>
@@ -172,7 +180,9 @@ export function Footer() {
           <a href="#events">Events</a>
           <a href="#schedule">Schedule</a>
           <a href="#contact">Contact</a>
-          <a {...registerLinkProps}>Register</a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp group</a>
+          <a href={REGISTER_URL}>Register</a>
         </nav>
       </div>
       <p className="copyright">© 2026 SYNAPTRA · Department of CSBS, SAEC. All rights reserved.</p>

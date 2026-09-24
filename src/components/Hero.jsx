@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { EVENT_DATE, registerLinkProps } from "../data";
+import { EVENT_DATE, REGISTER_URL } from "../data";
 
 function pad(value) {
   return String(value).padStart(2, "0");
@@ -56,7 +56,7 @@ export function Hero() {
         </h1>
       </div>
 
-      <p className="symposium-type reveal">National-format Technical &amp; Non-Technical Symposium</p>
+      <p className="symposium-type reveal">Technical &amp; Non-Technical Symposium</p>
       <p className="tagline reveal">
         Where Ideas Connect, <em>Innovation Takes Over</em>
       </p>
@@ -82,7 +82,7 @@ export function Hero() {
         ))}
       </div>
       <div className="hero-actions reveal">
-        <a className="btn magnetic" {...registerLinkProps}>
+        <a className="btn magnetic" href={REGISTER_URL}>
           Register now
         </a>
         <a className="btn ghost magnetic" href="#events">

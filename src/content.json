@@ -15,7 +15,7 @@
     "meta": "An Autonomous Institution · Ramanathapuram, Tamil Nadu",
     "dept": "Department of Computer Science and Business Systems",
     "deptShort": "(CSBS)",
-    "kicker": "National-format Technical & Non-Technical Symposium",
+    "kicker": "Technical & Non-Technical Symposium",
     "tagline": "Where Ideas Connect, Innovation Takes Over",
     "dek": "A one-day campus symposium for research, products, design, and live-floor competition — hosted by CSBS on 16 October 2026.",
     "motto": ["Think", "Create", "Compete", "Grow"],
@@ -235,11 +235,13 @@
   ],
   "faqs": [
     { "q": "Who can register?", "a": "Undergraduate students from recognised colleges. CSBS hosts the day; other departments and campuses may enter any listed event." },
-    { "q": "Is the fee per team or per person?", "a": "₹200 per head, as printed on the official SYNAPTRA '26 poster." },
-    { "q": "Can I enter more than one event?", "a": "Select one primary event here. Same-day clashes are resolved by coordinators. A second event is possible only if the timetable allows." },
-    { "q": "Do I need to submit an abstract or prototype in advance?", "a": "Paper presentation typically needs a short abstract. Project expo prefers a working demo on the day. UI/UX is a timed on-site problem statement with a required prototype pack. Exact file formats will be mailed to registered participants." },
-    { "q": "Will food or travel be provided?", "a": "Treat the campus as a one-day visit unless the department announces otherwise. Do not assume travel reimbursement or complimentary meals until you receive written confirmation." },
-    { "q": "Is this form the final official register?", "a": "This site stores a local SYN ID on your device so the experience is complete. The department can replace the endpoint with Google Forms, a sheet, or a payment link without changing the public page." }
+    { "q": "Is the fee per team or per person?", "a": "The registration fee is ₹200 per participant for students from other colleges." },
+    { "q": "Can I enter more than one event?", "a": "Yes. You can take part in more than one event as long as the schedules do not clash." },
+    { "q": "Do I need to submit an abstract or prototype in advance?", "a": "No. You do not need to submit an abstract or prototype in advance for Paper Presentation or Project Expo. Register and present on the day of the event." },
+    { "q": "Will food be provided?", "a": "Food details will be shared in your registration confirmation." },
+    { "q": "Where do I register?", "a": "Scan the QR code on the official poster, or use the Register button on this website." },
+    { "q": "Which events are available?", "a": "Technical: Paper Presentation, Project Expo, and UI/UX Design. Non-technical: Quiz and Auction." },
+    { "q": "When is SYNAPTRA '26?", "a": "16 October 2026. Attractive prizes await the winners." }
   ],
   "registerLead": "Last date 10 October 2026. Fee ₹200 per participant. You will receive a SYN ID on this device after submit.",
   "facultyCoordinators": [

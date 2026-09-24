@@ -1,7 +1,10 @@
 export const EVENT_DATE = new Date("2026-10-16T09:00:00+05:30");
 
-/** Official registration form. Opens in a new tab from every Register button. */
-export const REGISTER_URL = "https://forms.gle/";
+/** Official registration portal. Every Register button goes here. */
+export const REGISTER_URL = "https://synaptra.vscale.in/";
+
+export const INSTAGRAM_URL = "https://www.instagram.com/csbs_dept/";
+export const WHATSAPP_URL = "https://chat.whatsapp.com/IW2BVStbXm3C8elAwJhkzs";
 
 export const registerLinkProps = {
   href: REGISTER_URL,
@@ -24,10 +27,11 @@ export const facultyCoordinators = [
 ];
 
 export const studentCoordinators = [
+  { name: "Logesh.S", phone: "9025948164", display: "90259 48164" },
   { name: "Ajay Kumar.M", phone: "9488532069", display: "94885 32069" },
   { name: "Tamilarasi.S", phone: "8438118154", display: "84381 18154" },
   { name: "Nithyashree.D", phone: "9345840510", display: "93458 40510" },
-  { name: "Logesh.S", phone: "9025948164", display: "90259 48164" },
+  
 ];
 
 export const events = [
@@ -299,22 +303,30 @@ export const faqs = [
   },
   {
     q: "Is the fee per team or per person?",
-    a: "₹200 per head, as printed on the official SYNAPTRA '26 poster.",
+    a: "The registration fee is ₹200 per participant for students from other colleges.",
   },
   {
     q: "Can I enter more than one event?",
-    a: "Select one primary event here. Same-day clashes are resolved by coordinators. A second event is possible only if the timetable allows.",
+    a: "Yes. You can take part in more than one event as long as the schedules do not clash.",
   },
   {
     q: "Do I need to submit an abstract or prototype in advance?",
-    a: "Paper presentation typically needs a short abstract. Project expo prefers a working demo on the day. UI/UX is a timed on-site problem statement with a required prototype pack. Exact file formats will be mailed to registered participants.",
+    a: "No. You do not need to submit an abstract or prototype in advance for Paper Presentation or Project Expo. Register and present on the day of the event.",
   },
   {
-    q: "Will food or travel be provided?",
-    a: "Treat the campus as a one-day visit unless the department announces otherwise. Do not assume travel reimbursement or complimentary meals until you receive written confirmation.",
+    q: "Will food be provided?",
+    a: "Food details will be shared in your registration confirmation.",
   },
   {
     q: "Where do I register?",
-    a: "Use the Register button on this site. It opens the official registration form in a new tab. Keep the confirmation you receive after submit for campus verification.",
+    a: "Scan the QR code on the official poster, or use the Register button on this website.",
+  },
+  {
+    q: "Which events are available?",
+    a: "Technical: Paper Presentation, Project Expo, and UI/UX Design. Non-technical: Quiz and Auction.",
+  },
+  {
+    q: "When is SYNAPTRA '26?",
+    a: "16 October 2026. Attractive prizes await the winners.",
   },
 ];
