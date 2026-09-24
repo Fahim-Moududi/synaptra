@@ -58,7 +58,7 @@ export function Schedule({ items }) {
       </div>
       <p className="lead reveal">
         Doors follow this working order. Exact room and heat timings will be mailed after
-        registration closes on 10 October 2026.
+        registration closes on 13 October 2026.
       </p>
       <ol className="timeline">
         {items.map((item) => (
@@ -118,8 +118,8 @@ export function Details() {
           ["Date", "16.10.2026"],
           ["Start time", "9:00 AM"],
           ["Venue", "EEE Seminar Hall"],
-          ["Fee", "₹200 / head"],
-          ["Last date", "10.10.2026"],
+          ["Fee", "₹200/PARTICIPANT"],
+          ["Last date", "13.10.2026"],
         ].map(([label, value]) => (
           <article className="reveal" key={label}>
             <small>{label}</small>
@@ -146,7 +146,7 @@ export function Venue() {
             with a valid college identity card and your SYN registration ID.
           </p>
           <ul className="plain-list reveal">
-            <li><strong>Campus:</strong> Dr. E.M. Abdullah Campus, Ramanathapuram, Tamil Nadu</li>
+            <li><strong>Campus:</strong> Syed Ammal Engineering College, Ramanathapuram, Tamil Nadu</li>
             <li><strong>Hall:</strong> EEE Seminar Hall</li>
             <li><strong>Host:</strong> Department of Computer Science and Business Systems</li>
             <li><strong>Dress:</strong> Formal or smart campus attire recommended for jury events</li>

@@ -2,9 +2,9 @@
   "eventDate": "2026-10-16T09:00:00+05:30",
   "eventDateLabel": "16 October 2026",
   "eventDateShort": "16.10.2026",
-  "registerCloseLabel": "10 October 2026",
-  "registerCloseShort": "10.10.2026",
-  "registerCloseStat": "10 Oct",
+  "registerCloseLabel": "13 October 2026",
+  "registerCloseShort": "13.10.2026",
+  "registerCloseStat": "13 Oct",
   "startTime": "9:00 AM",
   "startTimeChip": "09:00 AM IST",
   "venue": "EEE Seminar Hall",
@@ -20,13 +20,13 @@
     "dek": "A one-day campus symposium for research, products, design, and live-floor competition — hosted by CSBS on 16 October 2026.",
     "motto": ["Think", "Create", "Compete", "Grow"],
     "countdownLabel": "Symposium starts in",
-    "finePrint": "Registration closes 10 October 2026. College ID required on campus."
+    "finePrint": "Registration closes 13 October 2026. College ID required on campus."
   },
   "stats": [
     ["05", "Flagship events"],
     ["01", "Campus day"],
     ["₹200", "Per participant"],
-    ["10 Oct", "Last date to register"],
+    ["13 Oct", "Last date to register"],
     ["SAEC", "Autonomous campus"]
   ],
   "about": {
@@ -65,8 +65,8 @@
       "kind": "tech",
       "code": "SYN-02 · Technical",
       "title": "Project Expo",
-      "blurb": "Exhibit a working prototype or applied campus project and walk the jury through the build.",
-      "tags": ["Live demo", "Poster", "Impact"]
+      "blurb": "A 1–4 member team shows an original, SDG-aligned build. Preferred: working demo and a 6–8 slide intro.",
+      "tags": ["1–4 members", "SDGs", "7+3 min"]
     },
     {
       "id": "uiux",
@@ -107,10 +107,20 @@
       "bring": "Laptop or a PPT/PDF on a drive, college ID, and a printed abstract if requested."
     },
     "expo": {
-      "lead": "A judged exhibition of a working prototype, product, or applied campus project. Static posters without a demo are weaker than a live walkthrough.",
-      "format": ["Station-based demo during the expo window.", "A one-page poster or one-pager is recommended.", "All team members should be able to explain the stack and the user."],
-      "eval": ["Novelty and completeness of the build.", "Usefulness and honesty about limits.", "Live demonstration quality."],
-      "bring": "Hardware or a stable laptop demo, chargers, and any offline fallback if campus network is constrained."
+      "lead": "Show an original project that solves a real-world problem and fits the SDGs. A working prototype is preferred. Walk the jury through the problem, the stack, the build, and the outcome.",
+      "format": [
+        "Each team may have 1–4 members.",
+        "Projects must address a real-world problem and satisfy the SDG goals.",
+        "A 6–8 slide deck is preferred to introduce the core idea, problem statement, and methodology.",
+        "Original work only. A working prototype or demo is preferred.",
+        "7 minutes for presentation + 3 minutes for Q&A. Internet is subject to venue availability."
+      ],
+      "eval": [
+        "Explain the problem, technology used, implementation, and outcome.",
+        "At least 80% of the project must be the participants' own work. AI tools must stay under 20%.",
+        "The judges' decision is final."
+      ],
+      "bring": "Laptop, demo hardware, chargers, required files, college ID, and a 6–8 slide deck if you have one."
     },
     "uiux": {
       "lead": "A timed design heat. You work from the assigned problem statement — identify the user, map the flow, then deliver a simple, readable interface. Craft matters; copying an existing product does not.",
@@ -168,7 +178,7 @@
   "scheduleIntro": {
     "eyebrow": "[ 03 ] Campus day",
     "title": "Indicative schedule",
-    "lead": "Doors follow this working order. Exact room and heat timings will be mailed after registration closes on 10 October 2026."
+    "lead": "Doors follow this working order. Exact room and heat timings will be mailed after registration closes on 13 October 2026."
   },
   "schedule": [
     { "time": "08:30", "title": "Reporting & kit", "text": "ID verification, registration desk, and event-wise assembly near the EEE Seminar Hall." },
@@ -200,7 +210,7 @@
       "title": "Registration",
       "open": true,
       "items": [
-        "Online registration is mandatory before 23:59 IST on 10 October 2026.",
+        "Online registration is mandatory before 23:59 IST on 13 October 2026.",
         "The published fee is ₹200 per participant (per head), not per team.",
         "Carry your college ID and the SYN ID issued after this form (or the official confirmation once the department form is linked).",
         "Payment mode on campus, if required, will be confirmed by the organising committee."
@@ -243,7 +253,7 @@
     { "q": "Which events are available?", "a": "Technical: Paper Presentation, Project Expo, and UI/UX Design. Non-technical: Quiz and Auction." },
     { "q": "When is SYNAPTRA '26?", "a": "16 October 2026. Attractive prizes await the winners." }
   ],
-  "registerLead": "Last date 10 October 2026. Fee ₹200 per participant. You will receive a SYN ID on this device after submit.",
+  "registerLead": "Last date 13 October 2026. Fee ₹200 per participant. You will receive a SYN ID on this device after submit.",
   "facultyCoordinators": [
     { "name": "R. Gautham Praveen", "role": "Assistant Professor, CSBS", "phone": "9629660577", "display": "96296 60577" },
     { "name": "V. Deepigha", "role": "Assistant Professor, CSBS", "phone": "6383022104", "display": "63830 22104" }

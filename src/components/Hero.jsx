@@ -89,7 +89,7 @@ export function Hero() {
           View events
         </a>
       </div>
-      <p className="fine-print reveal">Registration closes 10 October 2026. College ID required on campus.</p>
+      <p className="fine-print reveal">Registration closes 13 October 2026. College ID required on campus.</p>
     </section>
   );
 }

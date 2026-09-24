@@ -48,8 +48,8 @@ export const events = [
     kind: "tech",
     code: "SYN-02 · Technical",
     title: "Project Expo",
-    blurb: "Exhibit a working prototype or applied campus project and walk the jury through the build.",
-    tags: ["Live demo", "Poster", "Impact"],
+    blurb: "A 1–4 member team shows an original, SDG-aligned build. Preferred: working demo and a 6–8 slide intro.",
+    tags: ["1–4 members", "SDGs", "7+3 min"],
   },
   {
     id: "uiux",
@@ -111,21 +111,31 @@ export const briefs = {
     title: "Project Expo",
     body: (
       <>
-        <p>A judged exhibition of a working prototype, product, or applied campus project. Static posters without a demo are weaker than a live walkthrough.</p>
-        <h4>Format</h4>
+        <p>
+          Show an original project that solves a real-world problem and fits the SDGs.
+          A working prototype is preferred. Walk the jury through the problem, the stack,
+          the build, and the outcome.
+        </p>
+        <h4>Instructions</h4>
         <ul>
-          <li>Station-based demo during the expo window.</li>
-          <li>A one-page poster or one-pager is recommended.</li>
-          <li>All team members should be able to explain the stack and the user.</li>
+          <li>Each team may have 1–4 members.</li>
+          <li>Projects must address a real-world problem and satisfy the SDG goals.</li>
+          <li>A 6–8 slide deck is preferred to introduce the core idea, problem statement, and methodology.</li>
+          <li>The project must be original — not copied from an existing project.</li>
+          <li>A working prototype or demo is preferred.</li>
+          <li>Explain the problem, technology used, implementation, and outcome.</li>
+          <li>7 minutes for presentation + 3 minutes for Q&amp;A.</li>
+          <li>Bring all files, software, and hardware needed for the demonstration.</li>
+          <li>Internet is subject to venue availability. Have an offline fallback.</li>
+          <li>The judges&apos; decision is final.</li>
         </ul>
-        <h4>Evaluation focus</h4>
+        <h4>Important note</h4>
         <ul>
-          <li>Novelty and completeness of the build.</li>
-          <li>Usefulness and honesty about limits.</li>
-          <li>Live demonstration quality.</li>
+          <li>At least 80% of the project must be the participants&apos; own work.</li>
+          <li>Use of AI tools must stay under 20%.</li>
         </ul>
         <h4>Bring</h4>
-        <p>Hardware or a stable laptop demo, chargers, and any offline fallback if campus network is constrained.</p>
+        <p>Laptop, demo hardware, chargers, required files, college ID, and a 6–8 slide deck if you have one.</p>
       </>
     ),
   },
@@ -262,7 +272,7 @@ export const rules = [
     title: "Registration",
     open: true,
     items: [
-      "Online registration is mandatory before 23:59 IST on 10 October 2026.",
+      "Online registration is mandatory before 23:59 IST on 13 October 2026.",
       "The published fee is ₹200 per participant (per head), not per team.",
       "Carry your college ID and the SYN ID issued after this form (or the official confirmation once the department form is linked).",
       "Payment mode on campus, if required, will be confirmed by the organising committee.",

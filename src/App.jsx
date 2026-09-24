@@ -93,7 +93,7 @@ export default function App() {
             ["05", "Flagship events"],
             ["01", "Campus day"],
             ["₹200", "Per participant"],
-            ["10 Oct", "Last date to register"],
+            ["13 Oct", "Last date to register"],
             ["SAEC", "Autonomous campus"],
           ].map(([n, label]) => (
             <article className="reveal" key={label}>
