@@ -89,8 +89,8 @@
       "kind": "nontech",
       "code": "SYN-05 · Non-technical",
       "title": "Business Idea Auction",
-      "blurb": "Pitch a business on slides, take investment offers, and negotiate — keep more than 50% ownership.",
-      "tags": ["PPT pitch", "Negotiation", "Majority stake"]
+      "blurb": "A 1–4 member team pitches an original idea on a PPT, asks for investment, and must keep more than 50% ownership.",
+      "tags": ["1–4 members", "5 min", "Majority stake"]
     }
   ],
   "briefs": {
@@ -169,18 +169,15 @@
       "bring": "College ID and your team. Leave phones and wearables off the floor."
     },
     "auction": {
-      "lead": "Pitch a business or product to the floor, take investment offers, and negotiate the equity. A physical prototype is optional. The team that lands the strongest capital while keeping the most ownership wins.",
+      "lead": "Present an original business idea or product on a PPT, ask for investment, and negotiate ownership. Teams of 1–4.",
       "format": [
-        "Present the idea or product on a PPT. A physical prototype is optional.",
-        "After the pitch, investors may offer money for a share of the business.",
-        "Accept, reject, or counter. The team must keep more than 50% ownership."
+        "Each team can have 1–4 members and must present an original business idea/product using a PPT.",
+        "Teams get 5 minutes to present their idea and ask for investment.",
+        "Investors can offer money in exchange for a percentage of ownership. The team can accept, reject, or negotiate the offer.",
+        "Teams must retain more than 50% ownership. Investment and ownership details must be clear. Cheating, fake information, and plagiarism are not allowed.",
+        "Pitch and negotiation must be completed within the given time. Judges' decision will be final."
       ],
-      "eval": [
-        "The winner is the strongest investment amount with the highest ownership still held.",
-        "Pitch and negotiation must finish inside the given time.",
-        "No fake claims, plagiarism, or cheating. The judges' decision is final."
-      ],
-      "bring": "Laptop or a PPT on a drive, college ID, and a prototype only if you have one."
+      "bring": "Laptop or a PPT on a drive, and college ID."
     }
   },
   "scheduleIntro": {

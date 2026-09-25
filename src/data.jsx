@@ -71,8 +71,8 @@ export const events = [
     kind: "nontech",
     code: "SYN-05 · Non-technical",
     title: "Business Idea Auction",
-    blurb: "Pitch a business on slides, take investment offers, and negotiate — keep more than 50% ownership.",
-    tags: ["PPT pitch", "Negotiation", "Majority stake"],
+    blurb: "A 1–4 member team pitches an original idea on a PPT, asks for investment, and must keep more than 50% ownership.",
+    tags: ["1–4 members", "5 min", "Majority stake"],
   },
 ];
 
@@ -229,36 +229,19 @@ export const briefs = {
     body: (
       <>
         <p>
-          Pitch a business or product to the floor, take investment offers, and negotiate the
-          equity. A physical prototype is optional. The team that lands the strongest capital
-          while keeping the most ownership wins.
+          Present an original business idea or product on a PPT, ask for investment, and
+          negotiate ownership. Teams of 1–4.
         </p>
-        <h4>1. Pitch your idea</h4>
-        <ul>
-          <li>Each student or team presents the business or product on a PPT.</li>
-          <li>A physical product or prototype is optional, not required.</li>
-        </ul>
-        <h4>2. Ask for investment</h4>
-        <ul>
-          <li>After the pitch, investors may offer money in exchange for a share of the business.</li>
-        </ul>
-        <h4>3. Negotiate the deal</h4>
-        <ul>
-          <li>Accept, reject, or counter the offer.</li>
-          <li>The student or team must keep more than 50% ownership. Majority stays with you.</li>
-        </ul>
-        <h4>4. How the winner is called</h4>
-        <ul>
-          <li>Best result is the strongest investment amount with the highest ownership you can still hold.</li>
-        </ul>
-        <h4>5. Fair play &amp; time</h4>
-        <ul>
-          <li>Pitch and negotiation must finish inside the given time.</li>
-          <li>No fake claims, plagiarism, cheating, or other unfair practice.</li>
-          <li>The judges&apos; decision is final.</li>
-        </ul>
+        <h4>Instructions</h4>
+        <ol>
+          <li>Each team can have 1–4 members and must present an original business idea/product using a PPT.</li>
+          <li>Teams get 5 minutes to present their idea and ask for investment.</li>
+          <li>Investors can offer money in exchange for a percentage of ownership. The team can accept, reject, or negotiate the offer.</li>
+          <li>Teams must retain more than 50% ownership. Investment and ownership details must be clear. Cheating, fake information, and plagiarism are not allowed.</li>
+          <li>Pitch and negotiation must be completed within the given time. Judges&apos; decision will be final.</li>
+        </ol>
         <h4>Bring</h4>
-        <p>Laptop or a PPT on a drive, college ID, and a prototype only if you have one.</p>
+        <p> Bring Laptop and a PPT on a drive, and college ID.</p>
       </>
     ),
   },
