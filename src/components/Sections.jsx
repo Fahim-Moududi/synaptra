@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { faqs, facultyCoordinators, INSTAGRAM_URL, rules, studentCoordinators, WHATSAPP_URL } from "../data";
+import { faqs, facultyCoordinators, rules, studentCoordinators } from "../data";
 
 export function About() {
   return (
@@ -118,7 +118,7 @@ export function Details() {
           ["Date", "16.10.2026"],
           ["Start time", "9:00 AM"],
           ["Venue", "EEE Seminar Hall"],
-          ["Fee", "₹200/PARTICIPANT"],
+          ["Fee", <>₹200 <span className="meta-unit">/ participant</span></>],
           ["Last date", "13.10.2026"],
         ].map(([label, value]) => (
           <article className="reveal" key={label}>
@@ -212,16 +212,7 @@ export function Contact() {
       </div>
       <p className="lead reveal">
         Reach the CSBS desk for SYNAPTRA &apos;26 queries. Call during working hours.
-        Join the participant WhatsApp group for further information about the event.
       </p>
-      <div className="social-links reveal">
-        <a className="btn ghost magnetic social-link" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-          Instagram · @csbs_dept
-        </a>
-        <a className="btn ghost magnetic social-link" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-          WhatsApp · Participant group
-        </a>
-      </div>
       <h3 className="contact-label reveal">Faculty coordinators</h3>
       <div className="contact-grid">
         {facultyCoordinators.map((person) => (

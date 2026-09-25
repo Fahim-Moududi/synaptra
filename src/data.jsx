@@ -4,8 +4,7 @@ export const EVENT_DATE = new Date("2026-10-16T09:00:00+05:30");
 export const REGISTER_URL = "https://forms.gle/KoCb2iaz9hyn8Rxq9";
 
 export const INSTAGRAM_URL = "https://www.instagram.com/csbs_dept/";
-export const WHATSAPP_URL = "https://chat.whatsapp.com/IW2BVStbXm3C8elAwJhkzs";
-
+export const WHATSAPP_URL = "https://chat.whatsapp.com/BB8MlypXt4d865Usm8NpA5";
 export const registerLinkProps = {
   href: REGISTER_URL,
   target: "_blank",
@@ -27,8 +26,8 @@ export const facultyCoordinators = [
 ];
 
 export const studentCoordinators = [
-  { name: "Logesh.S", phone: "9025948164", display: "90259 48164" },
   { name: "Ajay Kumar.M", phone: "9488532069", display: "94885 32069" },
+  { name: "Logesh.S", phone: "9025948164", display: "90259 48164" },
   { name: "Tamilarasi.S", phone: "8438118154", display: "84381 18154" },
   { name: "Nithyashree.D", phone: "9345840510", display: "93458 40510" },
   
@@ -40,8 +39,8 @@ export const events = [
     kind: "tech",
     code: "SYN-01 · Technical",
     title: "Paper Presentation",
-    blurb: "Pitch a unique idea on 7–10 slides, aligned to the SDGs, in a 5–7 minute jury slot.",
-    tags: ["7–10 slides", "SDGs", "5–7 min"],
+    blurb: "Pitch a unique SDG idea on 6–9 slides. Include the required titles. Teams of 1–4. 5–7 minutes.",
+    tags: ["6–9 slides", "1–4 members", "Required titles"],
   },
   {
     id: "expo",
@@ -84,25 +83,32 @@ export const briefs = {
     body: (
       <>
         <p>
-          Present a unique idea before a faculty jury. The deck is the argument: short,
-          visual, and easy to follow. Align the work to the 17 Sustainable Development Goals.
+          Present a unique idea before a faculty jury. Keep the deck visual and align the work
+          to any of the 17 SDGs. Teams of 1–4.
         </p>
+        <aside className="brief-highlight">
+          <p className="hud">Required · PPT titles</p>
+          <h4>Include these titles in the PPT</h4>
+          <ol>
+            <li>Abstract</li>
+            <li>Problem Analysis and Existing Solutions</li>
+            <li>Proposed Solution</li>
+            <li>Technical Approach and Methodology</li>
+            <li>Implementation and Impacts</li>
+            <li>Expected Outcomes and Future Scopes</li>
+          </ol>
+        </aside>
         <h4>Important instructions — idea PPT</h4>
         <ul>
-          <li>Keep the deck to 7–10 slides, including the title slide.</li>
+          <li>Maximum 6–9 slides, including the title slide. Team size is 1–4 members.</li>
+          <li>The six titles above must appear in the PPT, in that order.</li>
           <li>Avoid paragraphs. Use points, diagrams, infographics, or pictures.</li>
-          <li>The idea should satisfy one or more of the 17 Sustainable Development Goals (SDGs).</li>
-          <li>Keep the explanation precise and easy to understand.</li>
-          <li>The idea must be unique and novel.</li>
-          <li>Each team has 5–7 minutes to present.</li>
-        </ul>
-        <h4>On the floor</h4>
-        <ul>
-          <li>Timed presentation followed by jury questions.</li>
-          <li>Slides in 16:9. Cite sources. No plagiarised slides or copied decks.</li>
+          <li>Keep the explanation precise and easy to understand. The idea should satisfy any of the 17 SDG goals.</li>
+          <li>The idea must be unique and novel. Each team has 5–7 minutes to present.</li>
+          <li>Save and upload a PPT file on the portal. Word or other formats are not accepted.</li>
         </ul>
         <h4>Bring</h4>
-        <p>Laptop or a PPT/PDF on a drive, college ID, and a printed abstract if requested.</p>
+        <p>Laptop or the submitted PPT on a drive, and college ID.</p>
       </>
     ),
   },

@@ -43,7 +43,11 @@ body {
 
 body.has-cursor,
 body.has-cursor a,
-body.has-cursor button { cursor: none; }
+body.has-cursor button,
+body.has-cursor .brief,
+body.has-cursor .brief *,
+body.has-cursor .modal,
+body.has-cursor .modal * { cursor: none; }
 
 .hud {
   font-family: "JetBrains Mono", monospace;
@@ -322,7 +326,7 @@ main,
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 50;
+  z-index: 90;
 }
 
 .cursor-dot,
@@ -1093,6 +1097,48 @@ h2 {
 
 .brief-card ul { padding-left: 1.1rem; margin: 0.6rem 0 1rem; }
 .brief-card h4 { margin: 0.9rem 0 0.35rem; font-size: 0.95rem; }
+.brief-card a:not(.btn) {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.brief-card a:not(.btn):hover { color: var(--magenta); }
+
+.brief-highlight {
+  margin: 1rem 0 1.2rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border: 1px solid rgba(232, 121, 249, 0.45);
+  border-left: 3px solid var(--cyan);
+  border-radius: 12px;
+  background:
+    linear-gradient(120deg, rgba(34, 211, 238, 0.12), rgba(232, 121, 249, 0.1));
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.08);
+}
+
+.brief-highlight h4 {
+  margin: 0.35rem 0 0.45rem;
+  color: var(--text);
+  font-family: Orbitron, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.brief-highlight p { color: #cbd5e1; }
+
+.brief-highlight ol {
+  margin: 0.55rem 0 0;
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+}
+
+.brief-highlight li {
+  margin: 0.35rem 0;
+  font-weight: 600;
+}
+
+.brief-highlight .btn {
+  margin-top: 0.85rem;
+  width: 100%;
+}
 
 .brief-actions {
   display: flex;
@@ -1174,6 +1220,11 @@ h2 {
   padding: 1.2rem;
   transform-style: preserve-3d;
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.35s;
+}
+
+.meta-grid article {
+  overflow: visible;
+  min-width: 0;
 }
 
 .pillar-grid article:hover,
@@ -1318,6 +1369,25 @@ h2 {
   margin: 0;
 }
 
+.events-join {
+  margin-top: 2rem;
+}
+
+.events-join h3 {
+  margin: 0.35rem 0 0.4rem;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.events-join > p:not(.eyebrow) {
+  margin: 0 0 0.9rem;
+  max-width: 42rem;
+  color: var(--muted);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1362,7 +1432,21 @@ h2 {
   text-transform: uppercase;
   font-size: 0.7rem;
 }
-.meta-grid p { margin-top: 0.4rem; font-size: 1.18rem; font-weight: 700; }
+.meta-grid p {
+  margin-top: 0.4rem;
+  font-size: 1.18rem;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  line-height: 1.25;
+}
+
+.meta-unit {
+  font-weight: 600;
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 
 .accordion { display: grid; gap: 0.75rem; margin-top: 1.2rem; }
 
@@ -1643,6 +1727,15 @@ input:focus, select:focus {
 
   .hero-actions .btn { width: 100%; }
 
+  .meta-grid article { padding: 1rem 0.85rem; }
+  .meta-grid p { font-size: 1.02rem; }
+  .meta-unit {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+
   .pillar-grid,
   .event-board,
   .register form,
@@ -1741,6 +1834,8 @@ input:focus, select:focus {
   .stat-bar,
   .meta-grid,
   .pillar-grid { grid-template-columns: 1fr 1fr; }
+
+  .meta-grid p { font-size: 0.98rem; }
 
   h1 {
     font-size: clamp(1.55rem, 11.5vw, 2.4rem);

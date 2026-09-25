@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { events, briefs, REGISTER_URL } from "../data";
+import { events, briefs, INSTAGRAM_URL, REGISTER_URL, WHATSAPP_URL } from "../data";
 
 const FILTERS = [
   ["all", "All events"],
@@ -64,6 +64,19 @@ export function Events({ onOpen }) {
             <span className="tile-cta">Open brief →</span>
           </article>
         ))}
+      </div>
+      <div className="events-join reveal">
+        <p className="eyebrow">Participants</p>
+        <h3>Join the participant channels</h3>
+        <p>Follow CSBS on Instagram and join the WhatsApp group for event updates.</p>
+        <div className="social-links">
+          <a className="btn ghost magnetic social-link" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+            Instagram · @csbs_dept
+          </a>
+          <a className="btn ghost magnetic social-link" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            WhatsApp · Participant group
+          </a>
+        </div>
       </div>
     </section>
   );

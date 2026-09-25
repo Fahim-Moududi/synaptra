@@ -57,8 +57,8 @@
       "kind": "tech",
       "code": "SYN-01 · Technical",
       "title": "Paper Presentation",
-      "blurb": "Pitch a unique idea on 7–10 slides, aligned to the SDGs, in a 5–7 minute jury slot.",
-      "tags": ["7–10 slides", "SDGs", "5–7 min"]
+      "blurb": "Pitch a unique SDG idea on 6–9 slides. Include the required titles. Teams of 1–4. 5–7 minutes.",
+      "tags": ["6–9 slides", "1–4 members", "Required titles"]
     },
     {
       "id": "expo",
@@ -95,16 +95,24 @@
   ],
   "briefs": {
     "paper": {
-      "lead": "Present a unique idea before a faculty jury. The deck is the argument: short, visual, and easy to follow. Align the work to the 17 Sustainable Development Goals.",
-      "format": [
-        "Keep the deck to 7–10 slides, including the title slide.",
-        "Avoid paragraphs. Use points, diagrams, infographics, or pictures.",
-        "The idea should satisfy one or more of the 17 Sustainable Development Goals (SDGs).",
-        "Keep the explanation precise and easy to understand. The idea must be unique and novel.",
-        "Each team has 5–7 minutes to present. Timed presentation followed by jury questions."
+      "lead": "Present a unique idea before a faculty jury. Keep the deck visual and align the work to any of the 17 SDGs. Teams of 1–4.",
+      "titles": [
+        "Abstract",
+        "Problem Analysis and Existing Solutions",
+        "Proposed Solution",
+        "Technical Approach and Methodology",
+        "Implementation and Impacts",
+        "Expected Outcomes and Future Scopes"
       ],
-      "eval": ["Clarity of the idea and SDG fit.", "Visual, point-led slides rather than paragraphs.", "Communication and time discipline in the 5–7 minute slot."],
-      "bring": "Laptop or a PPT/PDF on a drive, college ID, and a printed abstract if requested."
+      "format": [
+        "Maximum 6–9 slides, including the title slide. Team size is 1–4 members.",
+        "The six required titles must appear in the PPT, in that order.",
+        "Avoid paragraphs. Use points, diagrams, infographics, or pictures.",
+        "Keep the explanation precise. The idea should satisfy any of the 17 SDG goals.",
+        "The idea must be unique and novel. Each team has 5–7 minutes to present.",
+        "Upload a PPT only — no Word or other formats."
+      ],
+      "bring": "Laptop or the submitted PPT on a drive, and college ID."
     },
     "expo": {
       "lead": "Show an original project that solves a real-world problem and fits the SDGs. A working prototype is preferred. Walk the jury through the problem, the stack, the build, and the outcome.",
