@@ -1,49 +1,60 @@
 # SYNAPTRA ’26
 
-Official site for **SYNAPTRA ’26**, the technical and non-technical symposium of the Department of Computer Science and Business Systems (CSBS), [Syed Ammal Engineering College](https://www.syedengg.ac.in/) (Autonomous), Ramanathapuram.
+**Department of Computer Science and Business Systems**  
+Syed Ammal Engineering College (Autonomous), Ramanathapuram
 
-*Where Ideas Connect, Innovation Takes Over.*
+Official web presence for SYNAPTRA ’26 — a one-day technical and non-technical symposium.
 
-## Event snapshot
+> Where Ideas Connect, Innovation Takes Over.
+
+**Live site:** [https://synaptra.vscale.in/](https://synaptra.vscale.in/)
+
+---
+
+## Overview
+
+SYNAPTRA ’26 is hosted by CSBS on **16 October 2026** at the **EEE Seminar Hall**. The programme brings paper presentation, project expo, UI/UX design, quiz, and a business-idea auction onto one campus day.
+
+This repository is the production frontend for the official site.
 
 | | |
 | --- | --- |
-| **Date** | 16 October 2026 |
-| **Start** | 9:00 AM IST |
-| **Venue** | EEE Seminar Hall, SAEC, Ramanathapuram |
-| **Fee** | ₹200 per participant (other colleges) |
-| **Registration closes** | 13 October 2026, 23:59 IST |
-| **Register** | [Google Form](https://forms.gle/KoCb2iaz9hyn8Rxq9) |
-| **Instagram** | [@csbs_dept](https://www.instagram.com/csbs_dept/) |
+| Website | [synaptra.vscale.in](https://synaptra.vscale.in/) |
+| Date | 16 October 2026, 9:00 AM IST |
+| Venue | EEE Seminar Hall, SAEC, Ramanathapuram |
+| Fee | ₹200 per participant (other colleges) |
+| Registration deadline | 13 October 2026, 23:59 IST |
+| Register | [Google Form](https://forms.gle/KoCb2iaz9hyn8Rxq9) |
+| Instagram | [@csbs_dept](https://www.instagram.com/csbs_dept/) |
 
-Open to undergraduate students from recognised colleges. Carry a valid college ID on campus.
+Undergraduate students from recognised institutions are eligible. A valid college identity card is required on campus.
 
 ## Events
 
-**Technical**
+| Code | Event | Track |
+| --- | --- | --- |
+| SYN-01 | Paper Presentation | Technical |
+| SYN-02 | Project Expo | Technical |
+| SYN-03 | UI/UX Design | Technical |
+| SYN-04 | Quiz | Non-technical |
+| SYN-05 | Business Idea Auction | Non-technical |
 
-1. **Paper Presentation** — unique SDG-aligned idea on 6–9 slides; required titles; teams of 1–4; 5–7 minutes
-2. **Project Expo** — original SDG-aligned build; working demo preferred; 1–4 members; 7 + 3 minutes
-3. **UI/UX Design** — timed problem-statement sprint; user flow and original interface
+Format, evaluation notes, and what to bring are published as event briefs on the [live site](https://synaptra.vscale.in/).
 
-**Non-technical**
+## Technology
 
-4. **Quiz** — multiple timed rounds; gadgets off the floor
-5. **Business Idea Auction** — original pitch on a PPT; 5 minutes; keep more than 50% ownership; teams of 1–4
+| Layer | Choice |
+| --- | --- |
+| UI | React 19 |
+| Tooling | Vite 7 |
+| Hosting | [synaptra.vscale.in](https://synaptra.vscale.in/) |
+| Content | Static source (`src/data.jsx`) |
 
-Event briefs, guidelines, coordinators, and the indicative schedule live on the site.
+The site is a single-page application. There is no application server. Motion (neural canvas, HUD cursor, reveal) respects `prefers-reduced-motion`.
 
-## Stack
+## Local development
 
-- [React](https://react.dev/) 19
-- [Vite](https://vite.dev/) 7
-- Canvas neural mesh, HUD motion, and custom cursor (respects `prefers-reduced-motion`)
-
-No backend. Copy, events, coordinators, and links are in source.
-
-## Run locally
-
-Requires **Node.js 20+**.
+**Requirement:** Node.js 20 or later.
 
 ```bash
 git clone https://github.com/Fahim-Moududi/synaptra.git
@@ -52,51 +63,51 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173/](http://localhost:5173/). Vite binds to all interfaces (`host: true`) so phones on the same network can preview the mobile layout.
+The development server runs at [http://localhost:5173/](http://localhost:5173/) and is bound to all interfaces so a phone on the same network can preview the layout.
 
-| Script | |
+| Command | Purpose |
 | --- | --- |
-| `npm run dev` | local server on port 5173 |
-| `npm run build` | production build to `dist/` |
-| `npm run preview` | serve the production build |
+| `npm run dev` | Start the development server (port 5173) |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Serve the production build locally |
 
-## Project layout
+## Repository structure
 
 ```
 src/
-  App.jsx                 # boot sequence, layout, event brief overlay
-  data.jsx                # live copy — dates, events, briefs, FAQs, contacts
-  content.json            # content snapshot (site reads data.jsx)
-  index.css               # theme, layout, motion
+  App.jsx                 Application shell, boot sequence, event overlay
+  data.jsx                Canonical copy (dates, events, FAQs, contacts)
+  content.json            Draft snapshot — not imported at runtime
+  index.css               Theme, layout, and motion
   components/
-    Hero.jsx              # title, countdown, register CTA
-    Events.jsx            # filter, tiles, briefs, participant channels
-    Sections.jsx          # about, schedule, details, venue, FAQ, contact
-    Chrome.jsx            # header, footer, custom cursor, background
+    Hero.jsx              Title, countdown, primary registration CTA
+    Events.jsx            Filters, tiles, briefs, participant channels
+    Sections.jsx          About, schedule, details, venue, FAQ, contact
+    Chrome.jsx            Header, footer, custom cursor, background
   hooks/
-    useSiteEffects.js     # cursor, parallax, reveal
-    useNeuralCanvas.js    # background mesh
+    useSiteEffects.js     Cursor, parallax, reveal
+    useNeuralCanvas.js    Background mesh
 ```
 
-## Editing content
+## Content maintenance
 
-Change **`src/data.jsx`**. That file is what the app renders.
+Edit **`src/data.jsx`**. That module is the source of truth for the running application.
 
-Typical edits:
+| Constant / export | Use |
+| --- | --- |
+| `REGISTER_URL` | Destination of every Register control |
+| `INSTAGRAM_URL`, `WHATSAPP_URL` | Participant channels |
+| `EVENT_DATE` | Countdown (`2026-10-16T09:00:00+05:30`) |
+| `events`, `briefs` | Tiles and overlay copy |
+| `facultyCoordinators`, `studentCoordinators` | Contact section |
+| `rules`, `faqs` | Guidelines and FAQ |
 
-- **Registration URL** — `REGISTER_URL`
-- **Instagram / WhatsApp** — `INSTAGRAM_URL`, `WHATSAPP_URL`
-- **Event tiles and briefs** — `events`, `briefs`
-- **Coordinators** — `facultyCoordinators`, `studentCoordinators`
-- **Date / countdown** — `EVENT_DATE` (`2026-10-16T09:00:00+05:30`)
-- **Guidelines and FAQ** — `rules`, `faqs`
+Publish only facts confirmed by the organising committee. Do not invent prize amounts, additional contacts, or unconfirmed dates.
 
-Keep poster facts accurate. Do not invent prize amounts, extra contacts, or dates that are not confirmed by the organising committee.
-
-`src/content.json` is a mirror for drafting. Sync it if you use it, but the running site does not import it.
+`src/content.json` may be used as a drafting aid. Keep it in sync if you maintain it; the application does not load it.
 
 ## Contact
 
-Faculty and student coordinators (with phone numbers) are listed in the Contact section of the site.
+Faculty and student coordinators, with telephone numbers, are listed on the [Contact](https://synaptra.vscale.in/#contact) section of the live site.
 
-Participant updates: Instagram [@csbs_dept](https://www.instagram.com/csbs_dept/) and the WhatsApp group linked on the Events section.
+Participant updates: [Instagram @csbs_dept](https://www.instagram.com/csbs_dept/) and the WhatsApp group linked from the Events section.
